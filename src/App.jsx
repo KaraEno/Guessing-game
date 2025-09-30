@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     if (!joined) return;
-    const ws = new WebSocket("ws://guessing-game-api.pipeops.net/");
+    const ws = new WebSocket("wss://guessing-game-api.pipeops.net/");
 
     ws.onopen = () => {
       console.log("connected successfully");
